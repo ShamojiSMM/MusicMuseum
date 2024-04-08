@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+h2 {
+  margin-top: 0rem;
+}
+
+p {
+  display: inline;
+}
+
+.p3 {
+  font-size: 1em;
+}
+
+.p2 {
+  font-size: 0.8em;
+}
+
+.gray {
+  color: #656565;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#museum {
+  margin-top: 2rem;
+  margin-left: 0.4rem;
+}
+
+.content {
+  margin-bottom: 2rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid #656565;
+  width: 80%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.date {
+  font-size: 0.8em;
+  color: #656565;
+  margin-left: 1.5rem;
+}
+
+.text {
+  font-size: 0.8em;
+  margin-left: 1rem;
+}
+
+audio {
+  display: block;
+  height: 2.5rem;
+  width: 20rem;
+}
+
+.bold {
+  font-weight: bold;
+}
