@@ -107,9 +107,12 @@ musicList.forEach((music, i) => {
   var content = document.createElement("div");
   var title = document.createElement("p");
   var date = document.createElement("p");
+  var controls = document.createElement("div");
+  var audio = document.createElement("audio");
+  var download = document.createElement("a");
   var text = document.createElement("div");
 
-  var audio = document.createElement("audio");
+  var musicName = `${i + 1}_${music.name}.mp3`;
 
   content.className = "content";
 
@@ -119,17 +122,27 @@ musicList.forEach((music, i) => {
   date.textContent = music.date;
   date.className = "date";
 
+  controls.className = "controls";
+
   audio.controls = true;
   audio.type = "audio/mp3";
-  audio.src = `mp3/${i + 1}_${music.name}.mp3`;
+  audio.src = `mp3/${musicName}`;
+
+  download.className = "download";
+  download.textContent = "Download";
+  download.download = musicName;
+  download.href = `mp3/${musicName}`;
 
   text.innerText = music.note;
   text.className = "text";
 
-
   content.appendChild(title);
   content.appendChild(date);
-  content.appendChild(audio);
+
+  controls.appendChild(audio);
+  controls.appendChild(download);
+
+  content.appendChild(controls);
   content.appendChild(text);
 
   museum.appendChild(content);
