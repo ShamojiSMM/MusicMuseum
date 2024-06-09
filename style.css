@@ -54,17 +54,27 @@ a {
   font-size: 0.8em;
   color: #656565;
   margin-left: 1.5rem;
+  display: inline-block;
+}
+
+.controls {
+  display: block;
+}
+
+audio {
+  height: 2.5rem;
+  width: 20rem;
+}
+
+.download {
+  margin-left: 1rem;
+  position: relative;
+  bottom: 0.9rem;
 }
 
 .text {
   font-size: 0.8em;
   margin-left: 1rem;
-}
-
-audio {
-  display: block;
-  height: 2.5rem;
-  width: 20rem;
 }
 
 .bold {
