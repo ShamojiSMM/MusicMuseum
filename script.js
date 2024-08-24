@@ -1,20 +1,20 @@
 var musicList = [
-  {name: "酔払いの跋扈する夕焼け", date: "2023/08/28", note:
+  { name: "酔払いの跋扈する夕焼け", date: "2023/08/28", format: "mp3", note:
     `
       処女作です。
       作曲の知識なんて完全になかったので拙作(全部)ですがノリは悪くない。はず。
     `
   },
-  
-  {name: "気ままで淋しい村", date: "2023/08/30", note:
+
+  { name: "気ままで淋しい村", date: "2023/08/30", format: "mp3", note:
     `
       作ってるうちに何の曲か判らなくなりました。
       私の曲は大体そうですが。
       あと後半はまぁまぁ聴くに堪えないですね。手抜きだし。
     `
   },
-  
-  {name: "和の散る街", date: "2023/08/30", note:
+
+  { name: "和の散る街", date: "2023/08/30", format: "mp3", note:
     `
       和風...なはずです。なんだかんだお気に入りかも。
       ここまでの3作品はMuseScoreで作ってました。打ち込み大変すぎる。
@@ -22,14 +22,14 @@ var musicList = [
     `
   },
 
-  {name: "正直村へようこそ", date: "2023/10/15", note:
+  { name: "正直村へようこそ", date: "2023/10/15", format: "mp3", note:
     `
       なんでこんな曲名にしたんだろ？ってのは毎回思います。
       曲は暗いのか明るいのか...
     `
   },
 
-  {name: "Drunken Adventures", date: "2023/11/03", note:
+  { name: "Drunken Adventures", date: "2023/11/03", format: "mp3", note:
     `
       冒険と言えば冒険かもしれません。少なくとも酔払いにとっては。
       まぁ、そんなことを考えて作曲しているわけではないのです。
@@ -37,7 +37,7 @@ var musicList = [
     `
   },
 
-  {name: "Amusement Moment", date: "2023/11/16", note:
+  { name: "Amusement Moment", date: "2023/11/16", format: "mp3", note:
     `
       なんとなくギャグ臭のする曲です。
       少なくとも楽しそうな感じはしますね。
@@ -45,7 +45,7 @@ var musicList = [
     `
   },
 
-  {name: "Evening of Eve", date: "2023/12/23", note:
+  { name: "Evening of Eve", date: "2023/12/23", format: "mp3", note:
     `
       クリスマス前日っぽい曲です。
       当たり障りのない曲なので割とお気に入り。
@@ -53,7 +53,7 @@ var musicList = [
     `
   },
 
-  {name: "ShowGats", date: "2024/01/19", note:
+  { name: "ShowGats", date: "2024/01/19", format: "mp3", note:
     `
       和風を目指しましたが中華風になっちゃって正月感は出せませんでした。
       旧正月ですよ、旧正月。
@@ -61,7 +61,7 @@ var musicList = [
     `
   },
 
-  {name: "雪桜散る浜辺", date: "2024/02/03", note:
+  { name: "雪桜散る浜辺", date: "2024/02/03", format: "mp3", note:
     `
       季節感皆無の浜辺のイメージ。
       で作りたかったけど全然そんな感じしませんね。
@@ -69,14 +69,14 @@ var musicList = [
     `
   },
 
-  {name: "at Sakabar", date: "2024/02/04", note:
+  { name: "at Sakabar", date: "2024/02/04", format: "mp3", note:
     `
       酒場ではない。バーでもない。どこで流れてる曲なんでしょうか、これ。
       ちなみに21/8拍子です。変拍子らしく変な曲でノろうにもノれない。
     `
   },
 
-  {name: "サテライト極夜", date: "2024/03/29", note:
+  { name: "サテライト極夜", date: "2024/03/29", format: "mp3", note:
     `
       1μmぐらいのスペーシーさはあります。そんなつもりで作ったわけじゃないのに。
       最初は、暗い夜空を見上げて独り寂しくオカリナを吹いているイメージでした。
@@ -84,7 +84,7 @@ var musicList = [
     `
   },
 
-  {name: "泥酔ビリオネア", date: "2024/04/07", note:
+  { name: "泥酔ビリオネア", date: "2024/04/07", format: "mp3", note:
     `
       カジノっぽい曲です。
       実際には適当に作っていてたまたまそうなっただけです。
@@ -93,7 +93,7 @@ var musicList = [
     `
   },
 
-  {name: "テクノディペンデンシィ", date: "2024/06/09", note:
+  { name: "テクノディペンデンシィ", date: "2024/06/09", format: "mp3", note:
     `
       戦闘曲作りたいなぁ～ と思っていたのですが作れませんでした。
       テクノってついてますがテクノとか聴いたことありません。
@@ -102,11 +102,20 @@ var musicList = [
     `
   },
 
-  {name: "ふるやのもり", date: "2024/06/17", note:
+  { name: "ふるやのもり", date: "2024/06/17", format: "mp3", note:
     `
       RPGっぽい？曲です。森かな。
       今回は少しコード理論を勉強してきましたよ～。
       少しだけど。ほんとにさ。
+    `
+  },
+
+  { name: "デスマーチ克己曲", date: "2024/08/24", format: "ogg", note:
+    `
+      割とかっこいい？曲になったと思います。
+      マーチは行進曲という意味ですがどう考えても行進曲のテンポじゃない
+      (それ以前に曲の意味が重複してるし)。
+      あとループ対応してみました(のでoggです)。
     `
   }
 ];
@@ -120,7 +129,7 @@ musicList.forEach((music, i) => {
   var download = document.createElement("a");
   var text = document.createElement("div");
 
-  var musicName = `${i + 1}_${music.name}.mp3`;
+  var musicName = `${i + 1}_${music.name}.${music.format}`;
 
   content.className = "content";
 
@@ -133,26 +142,20 @@ musicList.forEach((music, i) => {
   controls.className = "controls";
 
   audio.controls = true;
-  audio.type = "audio/mp3";
-  audio.src = `mp3/${musicName}`;
+  audio.type = `audio/${music.format}`;
+  audio.src = `./audios/${musicName}`;
 
   download.className = "download";
   download.textContent = "Download";
   download.download = musicName;
-  download.href = `mp3/${musicName}`;
+  download.href = `./audios/${musicName}`;
 
   text.innerText = music.note;
   text.className = "text";
 
-  content.appendChild(title);
-  content.appendChild(date);
+  content.append(title, date);
+  controls.append(audio, download);
+  content.append(controls, text);
 
-  controls.appendChild(audio);
-  controls.appendChild(download);
-
-  content.appendChild(controls);
-  content.appendChild(text);
-
-  museum.appendChild(content);
-
+  museum.append(content);
 });
