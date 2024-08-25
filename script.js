@@ -132,6 +132,7 @@ musicList.forEach((music, i) => {
   var musicName = `${i + 1}_${music.name}.${music.format}`;
 
   content.className = "content";
+  content.id = `music${i + 1}`;
 
   title.textContent = `${i + 1}. ${music.name}`;
   title.className = "title";
