@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgba(170, 200, 255, 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+  padding: 20px 30px 0 30px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.4em;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+select {
+  height: 2rem;
+  width: 6rem;
+}
+
+p.gray {
+  color: #777;
+}
+
+#listContainer {
+  margin-top: 20px;
+}
+
+.audioContent {
+  margin-bottom: 32px;
+}
+
+.audioContent h2 {
+  margin-bottom: 0.2em;
+}
+
+.audioContent audio {
+  height: 3rem;
+  margin-right: 16px;
+}
+
+.audioContent a {
+  font-size: 1.1rem;
+}
+
+.audioContent p {
+  color: #777;
+  margin-bottom: 0.4em;
+}
